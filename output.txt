@@ -1,0 +1,112 @@
+Using device: mps
+
+[Baseline CNN]
+Accuracy: 99.10%
+[Baseline RNN]
+Accuracy: 98.45%
+
+[Pre-defense Robustness CNN]
+Robust Accuracy under fgsm_attack: 27.56%
+Robust Accuracy under pgd_attack: 0.15%
+[Pre-defense Robustness RNN]
+Robust Accuracy under fgsm_attack: 12.15%
+Robust Accuracy under pgd_attack: 0.01%
+
+[Adversarial Training CNN]
+[AdvTrain] Epoch 1/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[AdvTrain] Epoch 2/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[AdvTrain] Epoch 3/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[Adversarial Training RNN]
+[AdvTrain] Epoch 1/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[AdvTrain] Epoch 2/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[AdvTrain] Epoch 3/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+
+[Gradient Masking Training CNN]
+[GradMask] Epoch 1/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[GradMask] Epoch 2/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[GradMask] Epoch 3/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+
+[Gradient Masking Training RNN]
+[GradMask] Epoch 1/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[GradMask] Epoch 2/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+[GradMask] Epoch 3/3
+  batch 0/938
+  batch 200/938
+  batch 400/938
+  batch 600/938
+  batch 800/938
+
+[Post-AdvTrain Robustness CNN]
+Accuracy: 95.80%
+Robust Accuracy under fgsm_attack: 88.51%
+Robust Accuracy under pgd_attack: 84.39%
+[Post-AdvTrain Robustness RNN]
+Accuracy: 76.22%
+Robust Accuracy under fgsm_attack: 63.05%
+Robust Accuracy under pgd_attack: 58.67%
+
+[Post-GradMask Robustness CNN]
+Accuracy: 98.68%
+Robust Accuracy under fgsm_attack: 19.08%
+Robust Accuracy under pgd_attack: 0.23%
+[Post-GradMask Robustness RNN]
+Accuracy: 97.66%
+Robust Accuracy under fgsm_attack: 8.15%
+Robust Accuracy under pgd_attack: 0.10%
+[INFO] Saved visualization with 3 examples as 'cnn_adv.png'
+[INFO] Saved visualization with 3 examples as 'rnn_adv.png'
